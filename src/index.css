@@ -1,0 +1,70 @@
+
+@import "tailwindcss";
+
+body{
+    overflow-x: hidden;
+}
+
+@theme {
+    --color-navy: #064089;
+    --color-light: #c4c4c4;
+    --color-faint: #00000034;
+    --color-grey: #808080;
+}
+
+@layer components {
+    .nav-link-md{
+        @apply transition-transform duration-300 hover:scale-[1.06]
+    }
+
+    .nav-link-lg{
+        @apply transition-transform duration-300 hover:scale-[1.06] hover:translate-y-[-2px];
+    }
+
+    .btn-primary{
+        @apply border border-navy text-white px-4 py-2 bg-transparent transition duration-300 hover:bg-navy hover:text-white cursor-pointer rounded-sm w-fit font-medium
+    }
+    .btn-secondary{
+        @apply border border-white text-white px-4 py-2 bg-transparent transition duration-300 hover:bg-white hover:text-navy cursor-pointer rounded-sm w-fit font-medium
+    }
+    .section-header{
+        @apply mb-12 text-center text-4xl font-bold
+    }
+    .services{
+        @apply flex flex-col items-center gap-4 bg-navy text-white py-4 px-4 text-center rounded-sm
+    }
+    
+}
+
+.hero::after{
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: rgba(0, 0, 0, 0.6);
+}
+
+.programs::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
+.carousel{
+    overflow-x: auto !important;
+    
+
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group-carousel{
+    animation: spinn 7s infinite linear;
+}
+
+@keyframes spinn {
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}

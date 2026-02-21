@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Route, BrowserRouter as Router, Routes,  } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Admissions from './pages/Admissions'

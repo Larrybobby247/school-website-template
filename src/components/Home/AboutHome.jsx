@@ -10,7 +10,7 @@ const AboutHome = () => {
         <h3 className='text-xl text-navy'>About Us</h3>
         <h1 className='text-3xl font-medium'>Welcome to <span className='text-navy'>Methodist School</span>, a school of <span className='text-navy'>Knowledge</span></h1>
         <p className='text-grey text-lg'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi asperiores modi ipsa nemo dolorum architecto soluta deleniti sequi voluptatum ducimus.</p>
-        
+        <button className="btn-primary text-navy hover:text-white">Learn More</button>
       </div>
       <div className='w-full'>
         <img src={AboutImg} alt="" className='h-[400px] w-full object-cover rounded-sm' />
